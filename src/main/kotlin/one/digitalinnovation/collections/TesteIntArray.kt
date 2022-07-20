@@ -2,35 +2,35 @@ package one.digitalinnovation.collections
 
 fun main(){
     val traco = "------------"
-    val value = IntArray(5)
+    val values = IntArray(5)
 
-    value[0]= 1
-    value[1]= 7
-    value[2]= 6
-    value[3]= 3
-    value[4]= 2
+    values[0]= 1
+    values[1]= 7
+    values[2]= 6
+    values[3]= 3
+    values[4]= 2
 
-    for (valor in value){
+    for (valor in values){
         println(valor)
     }
     println(traco)
 
-    value.forEach {
+    values.forEach {
         println(it)
     }
     println(traco)
 
-    value.forEach {valor ->
+    values.forEach { valor ->
         println(valor)
     }
     println(traco)
 
-    for (index in value.indices)
-        println(value[index])
+    for (index in values.indices)
+        println(values[index])
     println(traco)
 
-    value.sort()
-    for (valor in value){
+    values.sort()
+    for (valor in values){
         println(valor)
     }
 
